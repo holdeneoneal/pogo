@@ -6,4 +6,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: pogo
 repo: github.com/holdeneoneal/pogo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: demo.com
+  group: pogo
+  kind: Weeble
+  path: github.com/holdeneoneal/pogo/api/v1alpha1
+  version: v1alpha1
 version: "3"

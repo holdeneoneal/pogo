@@ -1,0 +1,24 @@
+# permissions for end users to edit weebles.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: weeble-editor-role
+rules:
+- apiGroups:
+  - pogo.demo.com
+  resources:
+  - weebles
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - pogo.demo.com
+  resources:
+  - weebles/status
+  verbs:
+  - get

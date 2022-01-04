@@ -1,0 +1,6 @@
+apiVersion: pogo.demo.com/v1alpha1
+kind: Weeble
+metadata:
+  name: weeble-sample
+spec:
+  # Add fields here
